@@ -1,0 +1,515 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --noir:black;
+    --blanc:white;
+    --bn:rgb(1, 19, 70);
+    --bc:#0099ff;
+}
+html{
+    scrollbar-width: none;
+}
+img{ 
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(235, 232, 232);
+    color: var(--noir);
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+header{
+    position:fixed;
+    display: flex;
+    z-index: 999;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+header img{
+    width: 90px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+header ul a {
+    color: var(--bn);
+    text-decoration: none;
+    text-transform:  uppercase;
+    text-align: center;
+    transition: 0.3s;
+}
+header ul li a:hover{
+    color: var(--bc);
+}
+header h1 a{
+    color: var(--bn);
+    font-weight: normal;
+    text-decoration: none;
+    font-family: "abril",sans-serif;
+    text-transform:capitalize;
+    text-align: center;
+}
+header h1 span{
+    color: var(--bc);
+}
+header img{
+    display: none;
+}
+header .btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-weight:900;
+    color: var(--bn);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+header i{
+    font-size: 15px;
+}
+header .btn:hover{
+    color: var(--blanc);
+    background: rgba(0, 0, 0, 0.267);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.534);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+header .h-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connexion{
+    gap: 10px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    margin-top: 180px;
+    border-radius: 10px;
+    border: 1px solid #0000003f;
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+/* .connexion.touch {
+    height: 140px;
+    display: block;
+} */
+
+.connexion hr{
+    border: none;
+    background-color: #0000003f;
+    height: 1px;
+}
+.connexion button{
+    padding: 10px 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:900;
+    color: var(--bn);
+    text-transform: capitalize;
+    /* background: rgba(255, 255, 255, 0); */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* entete */
+.entete{
+    box-sizing: border-box;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 60px 0 30px;
+    margin-bottom: 45px;
+}
+.entete h1{
+    font-size: 90px;
+    color:var(--bn);
+}
+.entete h1 span{
+    color:var(--bc);
+}
+.entete div img{
+    width: 400px;
+}
+/* qui ete vous ??? */
+
+.qui-g{
+    display: flex;
+    flex-direction: column;
+}
+.qui-ask{
+    color: var(--bn);
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight:800;
+    font-size: 50px;
+    margin-bottom: 10px ;
+}
+.qui-option{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+.qui-option a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: var(--bn);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border-radius: 10px;
+    filter: blur(1.9px);
+}
+.qui-option a:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.418);
+    filter: blur(0px);
+}
+.qui-option a img{
+    width: 300px;
+    height: 200px;
+}
+
+/* section flou */
+.annonces,.qui-ete-vous,.presence-g{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* genere */
+.glass-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 16px 8px rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+    margin: 20px 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+.glass-card::before ,.glass-card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.glass-card::before{
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,transparent, rgba(255, 255, 255, 0.8),transparent);
+}
+.glass-card::after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.3) );
+}
+
+
+.annonces img{
+    width: 200px;
+    filter: blur(1.9px);
+}
+.annonces .img6{
+    height: 200px;
+}
+.annonces div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.annonces1{
+    gap: 90px;
+}
+.glass-card .annonces2{
+    color: var(--bn);
+    font-size: 40px;
+}
+.button-with-icon {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0099ff;
+    font-family: "Istok Web", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 25px;
+    outline: none;
+    padding: 10px 20px;
+  /* user-select: none; */
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #0099ff,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+} 
+
+.button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+.button-with-icon:active {
+    transform: translateY(3px);
+    box-shadow:
+    inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 #0099ff,
+    0 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon:hover .text {
+    transform: translateX(110px);
+}
+.button-with-icon:hover .icon {
+    transform: translate(23px);
+}
+
+.text {
+    transition: all 0.5s ease-in-out;
+}
+
+/* section presence */
+
+.presence-g img{
+    width: 500px;
+    object-fit: cover;
+}
+.presence-g a{
+    text-decoration: none;
+    color: var(--bn);
+    font-size: 60px;
+}
+.presence-g h1{
+    order: 1;
+}
+.img15{
+    order: 2;
+}
+
+
+/* pieds de page */
+
+svg {
+    display: block;
+}
+footer{
+    background-color: #0099ff;
+    height: auto;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.footer-social p{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-social i{
+    font-size: 30px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-tiktok:hover{
+    color: rgb(3, 3, 68);
+}
+.fa-twitter:hover{
+    color: #044068;
+}
+.fa-instagram:hover{
+    background:-webkit-linear-gradient(#ffbe0b,#8338ec,#fb5607,#ff006e) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-info{
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.footer-info p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+footer ul , footer a{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+footer ul:hover , footer a:hover{
+    color: #e0c5c5b7;
+}
+footer p:last-child{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #ffffffa6;
+}
+footer hr {
+    background-color: #00000044;
+    text-align: center;
+    border: none;
+    height: 3px;
+}
+
+form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+    /* display: none; */
+}
+.modif{
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    color: var(--bn);
+    font-family: 'abril';
+}
+
+
+/* PC */
+@media(max-width:1440px){
+}
+
+/* tablet */
+@media(max-width:1024px){
+header img{
+    display: block;
+}
+header h1{
+    display: none;
+}
+header .btn{
+    padding: 5px 10px;
+    gap:0;
+}
+.entete div img{
+    width: 150px;
+}
+.entete {
+    padding-top: 140px ;
+}
+.entete h1{
+    font-size: 70px;
+}
+.qui-ask{
+    font-size: 40px;
+}
+.qui-option a img{
+    width: 200px;
+    height: 150px;
+}
+.qui-option a {
+    filter: blur(1px);
+}
+.annonces-g img{
+    width: 90px;
+}
+.annonces-g .img6{
+    height: 150px;
+}
+.annonces2 h1,.presence-g a{
+    font-size: 55px;
+}
+.img15{
+    order:1;
+}
+.presence-g img{
+    width: 400px;
+}
+.footer-social p,.footer-social i{
+    font-size: 200%;
+}
+.footer-info{
+    gap: 20px;
+}
+}
+
+/* telephone */
+@media(max-width:600px){
+.entete img{
+    display: none;
+}
+}

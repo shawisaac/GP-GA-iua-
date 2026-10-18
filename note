@@ -1,0 +1,46 @@
+bleu clair (#E9F1FA), bleu vif (#00ABE4), blanc (#FFFFFF)
+
+
+
+"Optimisez le suivi de présence grâce à une plateforme automatisée et intuitive."
+
+
+"Une gestion de présence fiable et automatisée pour tous les étudiants."
+
+
+
+
+
+header ul{
+    font-size:10px ;
+}
+.entete h1{
+    font-size: 45px;
+}
+.entete div img{
+    width: 200px;
+}
+.entete{
+    margin-bottom: 20px;
+}
+header button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: var(--noir);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.blur img{
+    display: none;
+}
+
+
+/* tablette */
+
+/* From Uiverse.io by elijahgummer */ 
